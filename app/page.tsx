@@ -1,6 +1,6 @@
 
 import type { Metadata } from "next";
-import HomeClient from "./HomeClient.tsx";
+import HomeClient from "./HomeClient";
 
 export const metadata: Metadata = {
   title: "Riyan Foods & Spices LLP | Food Exporter in Gujarat, India",
