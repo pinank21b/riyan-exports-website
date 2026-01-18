@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riyanexims.parvamsoftech.com/sitemap.xml
