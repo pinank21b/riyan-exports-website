@@ -74,7 +74,7 @@ export default function HomePage() {
     name="description"
     content="Riyan Foods & Spices LLP is a merchant food exporter based in Bhavnagar, Gujarat, India. We export Indian spices, rice, grains, pulses, millets, and dehydrated food products to Middle East and global markets."
   />
-
+<meta name="descriptions" content="RIYAN FOODS AND SPICES LLP is a global B2B exporter of premium grains, processed foods, dehydrated products, and spices. We are committed to quality, reliability, and ethical sourcing."></meta>
   <meta name="keywords" content="
     exporter in gujarat,
     food exporter india,
@@ -86,6 +86,8 @@ export default function HomePage() {
     pulses exporter india
   " />
 
+ 
+    <meta name="keywords" content="food exporter, spice exporter, rice exporter, grains, dehydrated onion, B2B food supplier, global trade"></meta>
   <meta name="geo.region" content="IN-GJ" />
   <meta name="geo.placename" content="Bhavnagar, Gujarat, India" />
 
