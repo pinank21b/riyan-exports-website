@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyan Foods | Premium Export Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --emerald: #01241C;
+            --gold: #D4AF37;
+            --champagne: #F3E5AB;
+            --off-white: #FCFDFB;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--off-white);
+            font-family: 'Inter', sans-serif;
+            color: var(--emerald);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .font-serif { font-family: 'Cormorant Garamond', serif; }
+
+        /* Custom Premium Graphics */
+        .bg-mesh {
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(1, 36, 28, 0.05) 0px, transparent 50%);
+        }
+
+        .topo-svg {
+            mask-image: linear-gradient(to bottom, black, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(1, 36, 28, 0.1);
+        }
+
+        .gold-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gold-shimmer::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        @keyframes fade-in-down {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in-down {
+            animation: fade-in-down 0.8s ease-out forwards;
+        }
+
+        .pulse-soft {
+            animation: pulse-soft 2s infinite;
+        }
+
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ELITE GRAPHICS LAYER (Fixed) -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0 bg-mesh">
+        <!-- Topographic Map Graphic -->
+        <svg class="absolute top-0 left-0 w-full h-full opacity-[0.06] text-[#D4AF37] topo-svg" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,500 Q250,400 500,500 T1000,500 M0,600 Q250,500 500,600 T1000,600 M0,400 Q250,300 500,400 T1000,400" fill="none" stroke="currentColor" stroke-width="1" />
+            <path d="M0,700 Q250,600 500,700 T1000,700 M0,300 Q250,200 500,300 T1000,300" fill="none" stroke="currentColor" stroke-width="0.5" />
+        </svg>
+
+        <!-- Technical Trade Grid -->
+        <div class="absolute inset-0 opacity-[0.03]" 
+             style="background-image: linear-gradient(to right, #01241C 1px, transparent 1px), linear-gradient(to bottom, #01241C 1px, transparent 1px); background-size: 60px 60px;">
+        </div>
+
+        <!-- Corner Accents -->
+        <div class="absolute top-0 left-0 w-24 h-24 border-t-2 border-l-2 border-[#D4AF37]/20 rounded-tl-3xl m-6"></div>
+        <div class="absolute bottom-0 right-0 w-24 h-24 border-b-2 border-r-2 border-[#D4AF37]/20 rounded-br-3xl m-6"></div>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="relative z-10 max-w-md mx-auto min-h-screen flex flex-col px-7 pt-12 pb-10 justify-between">
+        
+        <!-- SECTION 1: PRIMARY IDENTITY -->
+        <section class="flex-1 flex flex-col">
+            
+            <!-- Logo Area (Exactly preserved) -->
+            <div class="text-center mb-10 animate-fade-in-down">
+                <h1 class="text-3xl font-serif font-bold tracking-tight text-[#01241C] mb-1">
+                    RIYAN FOODS
+                </h1>
+                <div class="flex items-center justify-center gap-2">
+                    <span class="h-[1px] w-6 bg-[#D4AF37]"></span>
+                    <p class="text-[10px] uppercase tracking-[0.2em] font-semibold text-gray-500">
+                        & SPICES LLP
+                    </p>
+                    <span class="h-[1px] w-6 bg-[#D4AF37]"></span>
+                </div>
+            </div>
+
+            <!-- Premium Narrative Card -->
+            <div class="relative overflow-hidden glass-card rounded-[2.5rem] p-8 shadow-2xl shadow-emerald-900/5 mb-8">
+                <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="award" class="w-4 h-4 text-[#D4AF37]"></i>
+                        <span class="text-[9px] uppercase tracking-[0.3em] text-[#D4AF37] font-bold">Premier Merchant Exporter</span>
+                    </div>
+                    <div class="px-3 py-1 rounded-full border border-emerald-900/10 bg-emerald-50 text-[8px] font-bold text-emerald-900 tracking-widest uppercase">
+                        Quality Assured
+                    </div>
+                </div>
+
+                <h2 class="text-[1.7rem] font-serif font-medium leading-[1.2] text-[#01241C] mb-4">
+                    Sourcing India’s <span class="text-[#D4AF37] italic">Purest Bounty</span> for the Global Supply Chain.
+                </h2>
+                
+                <div class="h-[1px] w-full bg-gradient-to-r from-[#D4AF37]/60 via-[#D4AF37]/5 to-transparent mb-5"></div>
+                
+                <p class="text-sm text-gray-600 leading-relaxed font-light tracking-wide">
+                    Excellence in the procurement and global delivery of premium spices, grains, and dehydrated food.
+                </p>
+            </div>
+
+            <!-- Excellence Pillars -->
+            <div class="grid grid-cols-3 gap-3 mb-10">
+                <div class="flex flex-col items-center justify-center p-4 rounded-3xl bg-white border border-emerald-900/5 shadow-sm">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-[#D4AF37] mb-2"></i>
+                    <span class="text-[8px] uppercase tracking-wider text-gray-400 mb-1">Origin</span>
+                    <span class="font-bold text-[9px] tracking-tighter text-[#01241C]">INDIA</span>
+                </div>
+                <div class="flex flex-col items-center justify-center p-4 rounded-3xl bg-white border border-emerald-900/5 shadow-sm">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-[#D4AF37] mb-2"></i>
+                    <span class="text-[8px] uppercase tracking-wider text-gray-400 mb-1">Grade</span>
+                    <span class="font-bold text-[9px] tracking-tighter text-[#01241C]">PREMIUM</span>
+                </div>
+                <div class="flex flex-col items-center justify-center p-4 rounded-3xl bg-white border border-emerald-900/5 shadow-sm">
+                    <i data-lucide="ship" class="w-5 h-5 text-[#D4AF37] mb-2"></i>
+                    <span class="text-[8px] uppercase tracking-wider text-gray-400 mb-1">Reach</span>
+                    <span class="font-bold text-[9px] tracking-tighter text-[#01241C]">GLOBAL</span>
+                </div>
+            </div>
+
+            <!-- Primary CTA -->
+            <a href="https://wa.me/+917874574687" target="_blank" rel="noopener noreferrer"
+               class="gold-shimmer flex items-center justify-center gap-4 bg-[#01241C] text-white py-5 px-8 rounded-full font-bold text-lg shadow-xl shadow-emerald-950/20 active:scale-95 transition-transform">
+                <i data-lucide="message-circle" class="w-6 h-6 fill-white/10"></i>
+                <span class="tracking-tight uppercase text-sm font-black">Trade Inquiry</span>
+            </a>
+        </section>
+
+        <!-- SECTION 2: FOOTER & LINKS -->
+        <section class="mt-16 pt-8 border-t border-emerald-900/5">
+            <div class="flex flex-col items-center">
+                <div class="grid grid-cols-4 gap-6 mb-10 w-full">
+                    <a href="https://riyanexims.parvamsoftech.com" class="flex flex-col items-center group">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-white border border-emerald-900/5 text-gray-400 group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/40 transition-all shadow-sm">
+                            <i data-lucide="globe" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-[8px] uppercase tracking-widest text-gray-400 mt-2 font-bold">WebSite</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/riyan-foods-and-spices-llp-074103383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="flex flex-col items-center group">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-white border border-emerald-900/5 text-gray-400 group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/40 transition-all shadow-sm">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-[8px] uppercase tracking-widest text-gray-400 mt-2 font-bold">Linkdin</span>
+                    </a>
+                    <a href="https://www.instagram.com/riyan_exim?igsh=OWx5M3U0eDVwcjMy&utm_source=qr" class="flex flex-col items-center group">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-white border border-emerald-900/5 text-gray-400 group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/40 transition-all shadow-sm">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-[8px] uppercase tracking-widest text-gray-400 mt-2 font-bold">Instagram</span>
+                    </a>
+                    <a href="mailto:sales@riyanexims.parvamsoftech.com" class="flex flex-col items-center group">
+                        <div class="w-14 h-14 rounded-2xl flex items-center justify-center bg-white border border-emerald-900/5 text-gray-400 group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/40 transition-all shadow-sm">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-[8px] uppercase tracking-widest text-gray-400 mt-2 font-bold">Email</span>
+                    </a>
+                </div>
+
+                <!-- Verified Badge -->
+                <div class="py-4 px-10 border border-[#D4AF37]/30 rounded-full inline-flex items-center gap-3 bg-white shadow-sm">
+                    <i data-lucide="star" class="w-3 h-3 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    <span class="text-[9px] tracking-[0.2em] uppercase text-[#01241C] font-bold">Certified Partner of Choice</span>
+                    <i data-lucide="star" class="w-3 h-3 text-[#D4AF37] fill-[#D4AF37]"></i>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 space-y-2 opacity-30">
+                <p class="text-[7px] tracking-[0.5em] uppercase text-gray-500">Excellence in Agricultural Sourcing</p>
+                <p class="text-[6px] tracking-[0.3em] uppercase text-gray-600">© Riyan Foods & Spices LLP • Global Export Edition</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
