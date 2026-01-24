@@ -55,8 +55,8 @@ export default function Footer() {
             </h4>
             <p className="text-[15px] leading-[1.7] text-neutral-700">
               India<br />
-              <a href="mailto:sales@riyanfoods.com" className="hover:text-brand-main transition">
-                sales@riyanfoods.com
+              <a href="mailto:sales@riyanexims.parvamsoftech.com" className="hover:text-brand-main transition">
+                sales@riyanexims.parvamsoftech.com
               </a><br />
               <a href="tel:+917874574687" className="hover:text-brand-main transition">
                 +91 78745 74687
@@ -66,7 +66,7 @@ export default function Footer() {
             {/* SOCIAL ICONS */}
             <div className="mt-6 flex gap-5">
               {/* LinkedIn */}
-              <a href="#" aria-label="LinkedIn" className="group">
+              <a href="https://www.linkedin.com/in/riyan-foods-and-spices-llp-074103383?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn" className="group">
                 <svg
                   className="w-5 h-5 text-neutral-600 group-hover:text-brand-main transition"
                   fill="currentColor"
@@ -77,7 +77,7 @@ export default function Footer() {
               </a>
 
               {/* Instagram */}
-              <a href="#" aria-label="Instagram" className="group">
+              <a href="https://www.instagram.com/riyan_exim?igsh=OWx5M3U0eDVwcjMy&utm_source=qr" aria-label="Instagram" className="group">
                 <svg
                   className="w-5 h-5 text-neutral-600 group-hover:text-brand-main transition"
                   fill="currentColor"
