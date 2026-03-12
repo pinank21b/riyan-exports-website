@@ -161,7 +161,7 @@ export default function ContactPage() {
 
             <div className="mt-12 text-sm text-neutral-600">
               📍 India <br />
-              📧 sales@riyanexims.parvamsoftech.com <br />
+              📧 riyanfoodsandspice@gmail.com <br />
               📞 +91 78745 74687
             </div>
           </motion.div>

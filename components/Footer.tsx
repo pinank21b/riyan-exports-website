@@ -55,8 +55,8 @@ export default function Footer() {
             </h4>
             <p className="text-[15px] leading-[1.7] text-neutral-700">
               India<br />
-              <a href="mailto:sales@riyanexims.parvamsoftech.com" className="hover:text-brand-main transition">
-                sales@riyanexims.parvamsoftech.com
+              <a href="mailto:riyanfoodsandspice@gmail.com" className="hover:text-brand-main transition">
+                riyanfoodsandspice@gmail.com
               </a><br />
               <a href="tel:+917874574687" className="hover:text-brand-main transition">
                 +91 78745 74687
